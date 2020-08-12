@@ -13,8 +13,13 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
+        // Fields partially completed
         Schema::create('products', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('description');
+            $table->float('price');
+            $table->string('cover_img')->nullable();
             $table->timestamps();
         });
     }

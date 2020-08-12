@@ -13,7 +13,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // We comment this because we don't want authentification for the home page (home.blade file)
+        //$this->middleware('auth');
     }
 
     /**
