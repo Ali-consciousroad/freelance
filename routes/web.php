@@ -22,3 +22,6 @@ Route::redirect('/','/home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// Cart controller with the add method
+// Use the id of a product as placeholder 
+Route::get('/add-to-cart/{product}', 'CartController@add')->name('cart.add');
