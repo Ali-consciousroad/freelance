@@ -10,7 +10,7 @@ class CartController extends Controller
     public function add(Product $product)
     {
         dd($product);
-        // add to cart action 
+        // add to cart action
         //$product = Product::find($productId);
     }
 }
